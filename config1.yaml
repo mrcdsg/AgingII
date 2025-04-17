@@ -3,9 +3,7 @@ genome: "mm10"
 reference_genome: "data/reference_genome/mm10.fa"
 bowtie2_index: "data/reference_genome"
 qc: "qc/"
-sample: ["SRR1979874", "SRR1979877", "SRR1979880", "SRR1979883", "SRR5642565_1", "SRR5642565_2", "SRR5642566_1", 
-         "SRR5642566_2", "SRR5642568_1", "SRR5642568_2", "SRR5642569_1", "SRR5642569_2", "SRR5642571_1", 
-         "SRR5642571_2", "SRR5642572_1", "SRR5642572_2"]
+sample: ["SRR1979874", "SRR1979877", "SRR1979880", "SRR1979883"]
 
 annotation_gtf: "data/reference_genome/annotation.gtf"
 trimmed_data: "trimmed/"
@@ -15,3 +13,5 @@ envs:
   bowtie2: "envs/bowtie2.yaml"
   picard: "envs/picard.yaml"
   macs2: "envs/macs2.yaml"
+
+  samples: "config/samples.tsv"
